@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+
+		<title>Grades</title>
+  
+		 <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+		 <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
+		  
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  
+		<link rel="stylesheet" type="text/css" href="../css/Grades.css">
+		 
+		 <meta charset="utf-8"/>
+  
+		<script type="text/javascript" src="../js/Grades.js"></script>
+
+	</head>
+	
+	<body style="background-color:WhiteSmoke;" >
+	
+		<div id="header">
+			<img src="../img/VESITLOGO1.png" alt="../img/VESIT Logo" width="1200" height="120" align="center"/>
+		</div>
+			
+		<div id="menu">
+			<ul>
+				<li><a class="active" href="../Grade_System_Home.html"> Grade System Home</a></li>
+				
+			<ul style="float:right;list-style-type:none;">
+				<li><a href="About.html">About</a></li>
+				<li><a href="Sign_In.html">Sign In</a></li>
+			</ul>
+		</div>
+			
+		<div id="nav">
+			<ul>
+				<li><a class="active" href="#sem">Semester</a></li>
+				<li><a href="#sem1">Sem I</a></li>
+				<li><a href="#sem2">Sem II</a></li>
+				<li><a href="#sem3">Sem III</a></li>
+				<li><a href="Grades.html">Sem IV</a></li>
+				<li><a href="#sem5">Sem V</a></li>
+				<li><a href="#sem6">Sem VI</a></li>
+				<li><a href="#sem7">Sem VII</a></li>
+				<li><a href="#sem8">Sem VIII</a></li>
+			</ul>
+		</div>
+		
+		<div class="main">
+
+			<h1>Grades</h1>
+
+			<form action="../php/Student_Grade.php" id="form" method="post">
+
+				<div class="form-group">
+					<label for="div">Class  </label><br>
+					<input type="text" name="div" class="form-control">
+				<br><br>
+					<label for = "sub" >Subject</label><br>
+						<select style="max-width:50%" name = "sub" id="sub" class="form-control">
+							<option>AT</option>
+							<option>AM IV</option>
+							<option>CN</option>
+							<option>COA</option>
+							<option>ITC</option>
+							<option selected = "selected">WP</option>
+						</select>
+				<br><br>
+					<label for="roll_no">Roll Number  </label><br>
+					<input type="text" name="roll_no" class="form-control">
+				</div>
+				<div class="form-group">
+					<input type="submit" value="Get your grades" class="submit" class="form-control">
+				</div>
+	
+			</form>
+		</div>
+		
+		<div id="footer">
+			Mini Project : Grading System<br>
+			Class : D10<br>
+			Batch : B<br>
+			Roll numbers : 38,42,44,46,50<br>
+		</div>
+		
+	</body>
+</html>

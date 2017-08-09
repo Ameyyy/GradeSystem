@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+
+		<title>Faculty Registration</title>
+  
+		 <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+		 <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
+		  
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		 
+		  <link rel="stylesheet" type="text/css" href="../css/Faculty_Registration.css">
+		 
+		 <meta charset="utf-8"/>
+  
+		<script type="text/javascript" src="../js/Faculty.js"></script>
+  
+	</head>
+	
+	<body style="background-color:WhiteSmoke;" >
+	
+		<div id="header">
+			<img src="../img/VESITLOGO1.png" alt="VESIT Logo" width="1200" height="125" align="center"/>
+		</div>
+			
+		<div id="menu">
+			<ul>
+				<li><a class="active" href="../Grade_System_Home.html"> Grade System Home</a></li>
+				
+				
+			<ul style="float:right;list-style-type:none;">
+				<li><a href="About.html">About</a></li>
+				<li><a href="Sign_In.html">Sign In</a></li>
+			</ul>
+		</div>
+			
+		
+		<div class="main">
+
+			<h1>Faculty Registration</h1>
+
+			<form action="../php/faculty.php" id="form" method="post">
+
+				<div class="form-group">
+					<label for="name">Name  </label><br>
+					<input type="text" name="name" class="form-control">
+				<br><br>
+				
+					<label for="email">VES Email  </label><br>
+					<input type="text" name="email" class="form-control">
+				<br><br>
+					<label for="pass">Password  </label><br>
+					<input type="password" name="pass" id="pass" class="form-control">
+				<br><br>
+					<label for="cpassword">Confirm Password</label><br>
+					<input type="password" name="cpassword" class="form-control">
+				<br><br>
+					<label for = "dep">Select a Department    </label><br>
+						<select name = "dep" id = "dep">
+							<option>FE</option>
+							<option>ETRX</option>
+							<option>INST</option>
+							<option>CMPN</option>
+							<option>EXTC</option>
+							<option selected = "selected">INFT</option>
+						</select>
+				
+				</div>
+							 
+				
+				<div class="form-group">
+					<input type="submit" value="Register" name="submit" class="form-control">
+				</div>
+				
+				<div class="form-group">
+						<p>Already registered? <a href="Sign_In.html">Sign Up</a></p>
+				</div>
+				
+			</form>
+		</div>
+		
+		<div id="footer">
+			Mini Project : Grading System<br>
+			Class : D10<br>
+			Batch : B<br>
+			Roll numbers : 38,42,44,46,50<br>
+		</div>
+		
+	</body>
+</html>
